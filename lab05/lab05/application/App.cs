@@ -1,4 +1,5 @@
 ﻿using System;
+using lab05.metodos.comparacionDePilas;
 using lab05.metodos.invertirTexto;
 using lab05.metodos.verificarcapicua;
 
@@ -31,7 +32,7 @@ namespace lab05.application
                     VerificarNumeroCapicua.EjecutarVerificarCapicua();
                     break;
                 case "4":
-                    //VerificarPilasIguales.EjecutarVerificarPilasIguales();
+                    VerificarComparacionDePilas.EjecutarComparacionDePilas();
                     break;
                 case "5":
                     InvertirTexto.EjecutarInvertirTexto();
