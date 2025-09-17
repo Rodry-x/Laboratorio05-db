@@ -1,5 +1,4 @@
 ﻿
-
 namespace lab05.pilaGenerica
 {
     public class PilaGenerica<T>

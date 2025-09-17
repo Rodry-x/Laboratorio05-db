@@ -6,7 +6,11 @@ namespace lab05.metodos.verificarcapicua
     {
         public static void EjecutarVerificarCapicua()
         {
-            Console.Write("\nIngresa un número entero: ");
+            Console.Clear();
+            Console.WriteLine("=====================================");
+            Console.WriteLine("| Verificar si un numero es capicúa |");
+            Console.WriteLine("-------------------------------------");
+            Console.Write("Ingresa un número entero: ");
             int numero = int.Parse(Console.ReadLine());
 
             int original = numero;
@@ -20,9 +24,11 @@ namespace lab05.metodos.verificarcapicua
             }
 
             if (original == invertido)
-                Console.WriteLine("El número es capicúa.");
+                Console.WriteLine("\nEl número es capicúa.");
             else
-                Console.WriteLine("El número no es capicúa.");
+                Console.WriteLine("\nEl número no es capicúa.");
+
+            Console.WriteLine("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         }
     }
 }

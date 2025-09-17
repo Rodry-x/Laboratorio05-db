@@ -1,9 +1,15 @@
 ﻿
 namespace lab05.nodo
 {
-    public class Nodo
+    internal class Nodo
     {
         public char dato;
         public Nodo? siguiente;
+    }
+
+    internal class NodoInt
+    {
+        public int dato;
+        public NodoInt? sgte;
     }
 }

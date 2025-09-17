@@ -1,35 +1,37 @@
-﻿using lab05.nodo;
+﻿
+using lab05.nodo;
 
 namespace lab05.pilaparaobtenerinicio
 {
-    class PilaParaObtenerInicio
+    internal class PilaParaObtenerInicio
     {
-        private Nodo inicio;
+        private NodoInt inicio;
 
         public PilaParaObtenerInicio()
         {
             inicio = null;
         }
 
-        public Nodo getCima()
+        public NodoInt getInicio()
         {
             return inicio;
         }
 
-        public void push(char valor)
+        public void push(int dato)
         {
-            Nodo nuevoNodo;
-            nuevoNodo = new Nodo();
-            nuevoNodo.dato = valor;
-            nuevoNodo.siguiente = inicio;
+            NodoInt nuevoNodo;
+            nuevoNodo = new NodoInt();
+            nuevoNodo.dato = dato;
+            nuevoNodo.sgte = inicio;
             inicio = nuevoNodo;
         }
-        public void pop()
+        public int pop()
         {
-            Nodo aux = inicio;
-            char valor = aux.dato;
-            inicio = aux.siguiente;
+            NodoInt aux = inicio;
+            int valor = aux.dato;
+            inicio = inicio.sgte;
             aux = null;
+            return valor;
         }
     }
 }

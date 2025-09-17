@@ -21,7 +21,13 @@ namespace lab05.metodos.comparacionDePilas
 
             // Comparar si son iguales
             bool iguales = SonPilasIguales(pila1, pila2);
+
+            Console.Clear();
+            Console.WriteLine("-------------------------");
+            Console.WriteLine("| Comparación de Pilas: |");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~");
             Console.WriteLine(iguales ? "Las pilas son iguales." : "Las pilas son diferentes.");
+            Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~");
         }
 
         static bool SonPilasIguales(Pila1 p1, Pila2 p2)
